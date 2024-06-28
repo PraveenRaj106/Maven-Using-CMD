@@ -12,9 +12,9 @@ pipeline {
         sh 'mvn compile'
       }
     }
-    stage('Test') {
+    stage('Install') {
       steps {
-        sh 'mvn test'
+        sh 'mvn install'
       }
     }
   }
